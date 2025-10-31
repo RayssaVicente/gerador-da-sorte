@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tipo = seletorJogo.value;
         const { quantidade, maximo } = regras[tipo];
         const numeros = gerarNumerosUnicos(quantidade, maximo);
+        const numerosFormatados = numeros.join(', ');
     });
         
     /**
