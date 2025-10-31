@@ -9,3 +9,14 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+
+.container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    /* Sombra para dar profundidade (efeito "card") */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
