@@ -50,3 +50,10 @@ select {
     padding: 0.8rem 1.5rem;
     cursor: pointer;
 }
+
+#btn-gerar {
+    /* ... (estilos anteriores) ... */
+    cursor: pointer;
+    /* Linha adicionada: */
+    border-radius: 50px;
+}
