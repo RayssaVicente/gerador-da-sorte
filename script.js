@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const { quantidade, maximo } = regras[tipo];
         const numeros = gerarNumerosUnicos(quantidade, maximo);
         const numerosFormatados = numeros.join(', ');
+        areaResultado.innerHTML = `<p>${numerosFormatados}</p>`;
     });
         
     /**
