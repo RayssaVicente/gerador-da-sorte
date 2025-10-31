@@ -2,3 +2,10 @@ body {
     font-family: sans-serif;
     background-color: #f4f4f4;
 }
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
