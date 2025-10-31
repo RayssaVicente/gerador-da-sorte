@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
      * @returns {number[]} 
      */
     function gerarNumerosUnicos(quantidade, maximo) {
+        const numerosUnicos = new Set();
 
+        while (numerosUnicos.size < quantidade) {
+
+        }
     }
     
 });
