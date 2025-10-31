@@ -51,11 +51,18 @@ select {
     cursor: pointer;
 }
 
-#btn-gerar {
-    /* ... (estilos anteriores) ... */
-    cursor: pointer;
-    /* Linha adicionada: */
-    border-radius: 50px;
-     /* Linha adicionada para suavizar o hover: */
-    transition: background-color 0.3s ease, transform 0.2s ease;
+#btn-gerar:hover {
+    background-color: #e76f51; /* Escurece no hover */
+    transform: translateY(-2px); /* Efeito de "levantar" */
+}
+
+#resultado {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed #eee;
+}
+
+#resultado p {
+    font-size: 1.2rem;
+    color: #555;
 }
