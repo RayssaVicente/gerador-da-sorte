@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     botaoGerar.addEventListener('click', () => {
         const tipo = seletorJogo.value;
         const { quantidade, maximo } = regras[tipo];
+        const numeros = gerarNumerosUnicos(quantidade, maximo);
     });
         
     /**
