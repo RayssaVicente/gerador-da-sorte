@@ -14,9 +14,13 @@ body {
     background-color: #ffffff;
     padding: 2.5rem;
     border-radius: 15px;
-    /* Sombra para dar profundidade (efeito "card") */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     text-align: center;
     width: 90%;
     max-width: 450px;
+}
+
+h1 {
+    color: #264653;
+    margin-bottom: 2rem;
 }
