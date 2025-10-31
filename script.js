@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const numero = Math.floor(Math.random() * maximo) + 1;
             numerosUnicos.add(numero);
         }
+        const numerosOrdenados = Array.from(numerosUnicos).sort((a, b) => a - b);
+
+        return numerosOrdenados;
     }
     
 });
