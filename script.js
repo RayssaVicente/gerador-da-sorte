@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'lotomania': { quantidade: 50, maximo: 100 }
     };
     botaoGerar.addEventListener('click', () => {
-
+        const tipo = seletorJogo.value;
+        const { quantidade, maximo } = regras[tipo];
     });
     
 });
