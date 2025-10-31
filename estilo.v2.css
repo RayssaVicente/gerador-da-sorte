@@ -66,3 +66,8 @@ select {
     font-size: 1.2rem;
     color: #555;
 }
+
+/* Estilo específico para os números gerados */
+.numeros-gerados {
+    /* Estilos serão adicionados no próximo commit de estilo */
+}
