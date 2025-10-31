@@ -8,4 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'lotofacil': { quantidade: 15, maximo: 25 },
         'lotomania': { quantidade: 50, maximo: 100 }
     };
+    botaoGerar.addEventListener('click', () => {
+
+    });
+    
 });
