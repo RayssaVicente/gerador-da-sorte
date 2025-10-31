@@ -28,3 +28,25 @@ h1 {
 .seletor {
     margin-bottom: 1.5rem;
 }
+
+.seletor label {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+select {
+    padding: 0.5rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#btn-gerar {
+    background-color: #f4a261; /* Cor de destaque */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+}
