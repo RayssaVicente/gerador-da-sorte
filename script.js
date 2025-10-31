@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const numerosUnicos = new Set();
 
         while (numerosUnicos.size < quantidade) {
-
+            const numero = Math.floor(Math.random() * maximo) + 1;
+            numerosUnicos.add(numero);
         }
     }
     
