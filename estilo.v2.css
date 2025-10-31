@@ -56,4 +56,6 @@ select {
     cursor: pointer;
     /* Linha adicionada: */
     border-radius: 50px;
+     /* Linha adicionada para suavizar o hover: */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
