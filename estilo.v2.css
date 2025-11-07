@@ -74,3 +74,28 @@ select {
     color: #2a9d8f; /* Cor principal */
     letter-spacing: 2px;
 }
+
+/* 💫 Efeito de destaque nos números gerados */
+.numeros-gerados {
+    background-color: #e8f6f3;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a9d8f; /* mantém sua cor principal */
+    letter-spacing: 2px;
+    animation: aparecer 0.4s ease;
+}
+
+/* ✨ Animação de aparição */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
