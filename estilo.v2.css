@@ -25,35 +25,88 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.seletor {
-    margin-bottom: 1.5rem;
+/* 👇 NOVO CSS PARA CARTÕES DE JOGO (FEATURE) */
+/* -------------------------------------- */
+
+.jogo-seletor-container h2 {
+    color: #264653;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-.seletor label {
-    margin-right: 10px;
-    font-size: 1.1rem;
+.jogo-opcoes {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
-select {
-    padding: 0.5rem;
+.jogo-card {
+    flex: 1 1 calc(50% - 10px); /* 2 colunas */
+    padding: 1rem 0.5rem;
     border: 2px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #264653;
+    font-weight: bold;
     font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
 }
 
-#btn-gerar {
-    background-color: #f4a261; /* Cor de destaque */
+.jogo-card:hover {
+    background-color: #e8f6f3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.jogo-card.active {
+    background-color: #2a9d8f; 
     color: white;
+    border-color: #2a9d8f;
+    box-shadow: 0 5px 15px rgba(42, 157, 143, 0.4);
+}
+
+/* -------------------------------------- */
+/* ESTILOS DE BOTÕES E RESULTADOS */
+/* -------------------------------------- */
+
+#btn-gerar, #btn-limpar, #tema-black {
+    /* Estilo básico para todos os botões */
     font-size: 1.1rem;
     font-weight: bold;
     border: none;
     padding: 0.8rem 1.5rem;
     cursor: pointer;
+    border-radius: 5px;
+    margin: 5px; /* Adiciona margem entre botões */
+}
+
+#btn-gerar {
+    background-color: #f4a261; /* Cor de destaque */
+    color: white;
 }
 
 #btn-gerar:hover {
-    background-color: #e76f51; /* Escurece no hover */
-    transform: translateY(-2px); /* Efeito de "levantar" */
+    background-color: #e76f51; 
+    transform: translateY(-2px); 
+}
+
+#btn-limpar {
+    background-color: #ddd; /* Cor mais neutra para limpar */
+    color: #333;
+}
+
+#btn-limpar:hover {
+    background-color: #ccc; 
+}
+
+/* Melhoria UX: Estilo de focus (acessibilidade) */
+#btn-gerar:focus, #btn-limpar:focus, .jogo-card:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(244, 162, 97, 0.4); 
+    border-color: #f4a261;
 }
 
 #resultado {
@@ -74,3 +127,88 @@ select {
     color: #2a9d8f; /* Cor principal */
     letter-spacing: 2px;
 }
+
+/* 💫 Efeito de destaque nos números gerados */
+.numeros-gerados {
+    background-color: #e8f6f3;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a9d8f; /* mantém sua cor principal */
+    letter-spacing: 2px;
+    animation: aparecer 0.4s ease;
+}
+
+/* ✨ Animação de aparição */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* -------------------------------------- */
+/* 👇 NOVO CSS PARA TEMA ESCURO (.tema-black) */
+/* -------------------------------------- */
+
+body.tema-black {
+    /* Fundo Escuro */
+    background: linear-gradient(120deg, #1f2730, #0d1217);
+    color: #f1f1f1;
+}
+
+body.tema-black .container {
+    /* Container (card) Escuro */
+    background-color: #1a222a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.tema-black h1,
+body.tema-black .jogo-seletor-container h2 {
+    /* Títulos Claras */
+    color: #e6e6e6;
+}
+
+body.tema-black .numeros-gerados {
+    /* Destaque dos Números Escuro */
+    background-color: #33404c;
+    color: #2a9d8f; /* Mantém a cor principal */
+}
+
+/* Inverte as cores do botão Tema */
+#tema-black {
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+body.tema-black #tema-black {
+    background-color: #4a4a4a;
+    color: #f1f1f1;
+}
+
+/* Adapta os cartões de jogo no tema escuro */
+body.tema-black .jogo-card {
+    border: 2px solid #33404c;
+    background-color: #252d36;
+    color: #c4c4c4;
+}
+
+body.tema-black .jogo-card:hover {
+    background-color: #33404c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.tema-black .jogo-card.active {
+    background-color: #2a9d8f; 
+    color: white;
+    border-color: #2a9d8f;
+    box-shadow: 0 5px 15px rgba(42, 157, 143, 0.5);
+}
+
