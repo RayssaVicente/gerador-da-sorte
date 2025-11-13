@@ -15,20 +15,31 @@
            <button id="tema-black">Tema Black</button> <!-- mudar tema da pagina  -->
         </div>
           <h1>Gerador da Sorte</h1>
-          <label for="tipo-jogo">Escolha o jogo:</label>
-            <select id="tipo-jogo">
-                <option value="mega-sena">Mega-Sena</option>
-                <option value="quina">Quina</option>
-                <option value="lotofacil">Lotofácil</option>
-                <option value="lotomania">Lotomania</option>
-            </select>
+        <div class="jogo-seletor-container">
+          <h2>Escolha o Jogo:</h2>
+    
+          <div class="jogo-opcoes">
+            <button class="jogo-card active" data-jogo="mega-sena" data-min="6" data-max="60">
+            Mega-Sena
+            </button>
+            <button class="jogo-card" data-jogo="quina" data-min="5" data-max="80">
+            Quina
+            </button>
+            <button class="jogo-card" data-jogo="lotofacil" data-min="15" data-max="25">
+            Lotofácil
+            </button>
+            <button class="jogo-card" data-jogo="lotomania" data-min="50" data-max="100">
+            Lotomania
+            </button>
+          </div>
+        </div>
 
             <button id="btn-gerar">Gerar Números</button>
                 <!--adiciona botão que limpa os resultados.-->
-                <button id="btn-limpar" class="oculto">Limpar</button> <div id="resultado"></div>
-            <div id="resultado">
-                <p>Seus números aparecerão aqui!</p>
-            </div>
+                <button id="btn-limpar" class="oculto">Limpar</button> <div id="resultado">
+                  <p>Seus números aparecerão aqui!</p>
+                </div>
+            
       </div>
 
       
